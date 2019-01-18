@@ -31,9 +31,19 @@ public class Person1 {
 	 */
 	private String calc(String input) {
 	  //Person 1 put your implementation here
-	  return null;
+      StringBuilder buildMe = new StringBuilder(input);
+      buildMe.append(input.charAt(0));
+      buildMe.append(input.charAt(0));
+      String trimMe = buildMe.toString();
+      String finalString = trimMe.substring(2, trimMe.length());
+	  return finalString;
 	}
 	
+    public static void main(String args[]) {
+        System.out.println("Hello World");
+        Person1 yeet = new Person1("Yeet");
+        System.out.println(yeet.toString());
+    }
 	/**
 	 * Return a string rep of this object
 	 * that varies with an input string

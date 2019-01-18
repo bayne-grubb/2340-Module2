@@ -31,8 +31,8 @@ public class Person5 {
 	 */
 	private String calc(String input) {
 	  //Person 5 put your implementation here
-	  String newName = input[input.length()-2, input.length()];
-      newName += input[0, input.length()-2];
+	  String newName = input.substring(0, 2);
+      newName = input.substring(2, input.length()) + newName;
       return newName;
 	}
 
